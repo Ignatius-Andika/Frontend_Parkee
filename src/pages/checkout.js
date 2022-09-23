@@ -29,7 +29,7 @@ const History = () => {
             </tr>
           </thead>
           <tbody>
-            {users.map((user, index) => user.checkout === "" ? (
+            {users.map((user, index) => !user.checkout && !user.total_price ? (
               <tr key={user._id}>
                 <td>{user.name}</td>
                 <td>{user.vehicle_plate}</td>

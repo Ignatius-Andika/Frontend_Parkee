@@ -11,6 +11,8 @@ const Checkin = () => {
 	const [location, setLocation] = useState("");
 	const [vehicle_type, setType] = useState("Car");
 	const [checkin, setCheckin] = useState("");
+	// const [checkout, setCheckout] = useState("");
+	// const [total_price, setPrice] = useState("");
 	const navigate = useNavigate();
 
 	const saveUser = async (e) => {
@@ -22,7 +24,9 @@ const Checkin = () => {
 				phone,
 				location,
 				vehicle_type,
-				checkin
+				checkin,
+				// checkout,
+				// total_price
 			});
 			console.log("DATA INPUTED");
 			  navigate("/checkout");
